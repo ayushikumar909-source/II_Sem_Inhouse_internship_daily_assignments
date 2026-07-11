@@ -1,10 +1,14 @@
 <?php
-include("dashboardHeader.php");
-session_start();
+ include ("header.php");
+ include ("dashboardVerticalContent.php");
+ ?>
+<h2>
 
-echo "Welcome," ".$_SESSION['user_name']."!";
+ <?php echo"Welcome". $_SESSION['user_name']."!";
 ?>
-
+</h2>
+    
 <?php
+include("dashboardFooter.php");
 include("footer.php");
 ?>
